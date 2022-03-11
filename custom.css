@@ -41,35 +41,69 @@ nav .navbar-brand {
 }
 
 /*Prima immagine e titolo*/
-#firstSection {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 2px 1px 4px #161515;
-  margin-top: 3%;
-  background-image: url("img/Duomo-Milano-Targhe.png");
-  -webkit-animation: shrink 5s infinite alternate;
-          animation: shrink 5s infinite alternate;
-  height: 600px;
-  padding: 3%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+@media all and (min-width: 481px) {
+  #firstSection {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 1px 4px #161515;
+    margin-top: 3%;
+    background-image: url("img/Duomo-Milano-Targhe.png");
+    -webkit-animation: shrink 5s infinite alternate;
+            animation: shrink 5s infinite alternate;
+    height: 600px;
+    padding: 3%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  #firstSection .testoOpacity {
+    position: absolute;
+    inset: 0px 0px 200px 0px;
+    margin: auto;
+    padding: 2%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    /* background-color:rgba(255, 255, 255, 0.178) ;
+            border-radius: 10px;*/
+  }
 }
 
-#firstSection .testoOpacity {
-  position: absolute;
-  inset: 0px 0px 200px 0px;
-  margin: auto;
-  padding: 2%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  /* background-color:rgba(255, 255, 255, 0.178) ;
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) {
+  #firstSection {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 1px 4px #161515;
+    margin-top: 3%;
+    background-image: url("img/Duomo-Milano-Targhe.png");
+    -webkit-animation: shrink2 5s infinite alternate;
+            animation: shrink2 5s infinite alternate;
+    height: 600px;
+    padding: 3%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  #firstSection .testoOpacity {
+    position: absolute;
+    inset: 0px 0px 200px 0px;
+    margin: auto;
+    padding: 2%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    /* background-color:rgba(255, 255, 255, 0.178) ;
         border-radius: 10px;*/
+  }
 }
 
 /*Chi sono*/
@@ -245,6 +279,24 @@ h3.card-title {
   }
   100% {
     background-size: 2160px 1364px;
+  }
+}
+
+@-webkit-keyframes shrink2 {
+  0% {
+    background-size: 1000px 500px;
+  }
+  100% {
+    background-size: 1300px 700px;
+  }
+}
+
+@keyframes shrink2 {
+  0% {
+    background-size: 1000px 500px;
+  }
+  100% {
+    background-size: 1300px 700px;
   }
 }
 
