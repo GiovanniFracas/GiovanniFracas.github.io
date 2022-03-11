@@ -179,6 +179,11 @@ nav .navbar-brand {
   font-size: 24px;
 }
 
+/* servizi */
+h3.card-title {
+  margin: 5%;
+}
+
 /* Team */
 #team .card:hover {
   background-color: #f0f0f0;

@@ -3,12 +3,14 @@ $(() => {
     $('.n1').hide();
     $('.b1').hide();
     $('.card').on('mouseenter', function () {
-        console.log($(this).children(".card-text").show());
-        console.log($(this).children('.n1').hide());
+        $(this).children(".card-text").fadeIn()
+        console.log($(this).children('.n1').fadeOut());
     })
     $('.card').on('mouseleave', function () {
-        console.log($(this).children(".card-text").hide());
-        console.log($(this).children('.n1').show());
-
+        setTimeout(() => {
+            console.log($(this).children(".card-text").fadeOut());
+        console.log($(this).children('.n1').fadeIn());
+        }, 1000);
+        
     })
 })
