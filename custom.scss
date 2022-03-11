@@ -1,4 +1,4 @@
-@import url('node_modules/bootstrap/dist/css/bootstrap.css');
+@import url("node_modules/bootstrap/dist/css/bootstrap.css");
 
 /* h1 e h2*/
 
@@ -6,20 +6,20 @@ h1 {
     font-size: 56px;
     font-weight: bolder;
 }
-.testoOpacity{
-    border-left:5px solid white ;
-    border-right:5px solid white ;
+.testoOpacity {
+    border-left: 5px solid white;
+    border-right: 5px solid white;
 }
 
 h2,
 h3 {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
+        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 img {
     width: 100%;
 }
-
 
 /*navbar*/
 
@@ -39,12 +39,11 @@ nav {
     }
 }
 
-
 /*Prima immagine e titolo*/
 
 #firstSection {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-shadow: 2px 1px 4px #161515;
     margin-top: 3%;
     background-image: url("img/Duomo-Milano-Targhe.png");
@@ -66,19 +65,6 @@ nav {
         border-radius: 10px;*/
     }
 }
-.bg-firstSection{
-    
-}
-
-
-/*
-#commercialista {
-    position: relative;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
-}
-*/
-
 
 /*Chi sono*/
 
@@ -109,25 +95,24 @@ nav {
     top: 20%;
 }
 
-
-#carouselExampleControls{
-   .col-lg-4{
-       padding: 3%;
-   }
+#carouselExampleControls {
+    .col-lg-4 {
+        padding: 3%;
+    }
 }
 .carousel-control-next,
 .carousel-control-prev {
     filter: invert(100%);
-  
 }
 
-  .card:hover {
+.card:hover {
     transform: scale(1.1);
+    // background-color: #f0f0f0;
     z-index: 1000;
-  }
-  .card {
+}
+.card {
     transition: transform 0.2s ease;
-  }
+}
 /* #servizi {
     background-color: #cfcfcf;
     .fa-pen-fancy:before {
@@ -148,11 +133,11 @@ nav {
 }
 
  */
-#mission{
+#mission {
     padding: 0;
 }
 .background {
-    background-image: url('img/servizi1.jpg');
+    background-image: url("img/servizi1.jpg");
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -178,6 +163,12 @@ nav {
     }
 }
 
+/* Team */
+#team {
+    .card:hover {
+        background-color: #f0f0f0;
+    }
+}
 
 /* dove siamo */
 #doveSiamo {
@@ -207,7 +198,6 @@ nav {
     }
 }
 
-
 @keyframes shrink {
     0% {
         background-size: 2400px 1516px;
@@ -216,6 +206,6 @@ nav {
         background-size: 2160px 1364px;
     }
 }
-.carousel{
-    position:initial;
+.carousel {
+    position: initial;
 }
