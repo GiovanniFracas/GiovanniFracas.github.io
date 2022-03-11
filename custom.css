@@ -180,6 +180,14 @@ nav .navbar-brand {
 }
 
 /* servizi */
+#car1 {
+  margin-bottom: 10%;
+}
+
+#car2 {
+  margin-bottom: 11.5%;
+}
+
 h3.card-title {
   margin: 5%;
 }
