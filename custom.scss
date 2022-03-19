@@ -97,9 +97,11 @@ nav {
 /*Chi sono*/
 
 #chisono {
+    opacity: 0;
     border-right: grey 1px solid;
     background-color: #f0f0f0;
     img {
+     
         height: 100%;
     }
     #testoChiSono {
@@ -135,7 +137,7 @@ nav {
 
 .card:hover {
     transform: scale(1.1);
-    // background-color: #f0f0f0;
+     background-color: #f0f0f0;
     z-index: 1000;
 }
 .card {
@@ -203,6 +205,7 @@ margin-bottom: 10%;
 
 /* Team */
 #team {
+    opacity: 0;
     .card:hover {
         background-color: #f0f0f0;
     }
@@ -255,3 +258,38 @@ margin-bottom: 10%;
 .carousel {
     position: initial;
 }
+.fadeinLeft{
+    opacity: 1 !important;
+    -webkit-animation: fadeInLeft 2s;
+    animation: fadeInLeft 2s;
+
+}
+.fadeinRight{
+    opacity: 1 !important;
+    -webkit-animation: fadeInRight 2s;
+    animation: fadeInRight 2s;
+
+}
+
+
+
+@keyframes fadeInLeft {
+    0% {
+       opacity: 0;
+       transform: translateX(-40px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(40px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ }   
